@@ -9,6 +9,7 @@ import {  MatInputModule, MatCardModule,  MatButtonModule,  MatToolbarModule, Ma
 import { AddPizzaInfoComponent } from './add-pizza-info/add-pizza-info.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     MatExpansionModule,
     MatTabsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],

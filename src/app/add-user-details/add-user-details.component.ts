@@ -19,8 +19,8 @@ export class AddUserDetailsComponent implements OnInit {
   userInfo = this.fb.group({
     name: ['',  [Validators.required, Validators.pattern('[a-z A-z]*')]],
     address: ['', Validators.required],
-    pincode: ['',  [Validators.required, Validators.pattern('[0-9]*')]],
-    phone_no: ['',  [Validators.required, Validators.pattern('[0-9]*')]]
+    pincode: ['',  [Validators.required, Validators.pattern('[0-9]*'),Validators.minLength(6 ), Validators.maxLength(6)]],
+    phone_no: ['',  [Validators.required, Validators.pattern('[0-9]*'),Validators.minLength(10), Validators.maxLength(10)]]
   })
 
   onClick(){
