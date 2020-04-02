@@ -10,4 +10,5 @@ export class CommonService {
   public showAddPizza = false;
   public showCartDetails = false;
   public pizzaDetails;
+  public showuserDetails = false;
 }

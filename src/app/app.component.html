@@ -2,7 +2,12 @@
   <div class="col-xs-6 b padd">
     <img class="img1" src="../assets/images/pizza.jpg" />
   </div>
-  <div class="col-xs-6"><app-add-user-details></app-add-user-details></div>
+  <div class="col-xs-6" *ngIf="commonService.showuserDetails">
+    <app-add-user-details></app-add-user-details>
+  </div>
+  <div class="col-xs-6" *ngIf="!commonService.showuserDetails">
+  <app-front-page ></app-front-page>
+  </div>
 </div>
 
 

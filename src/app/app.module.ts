@@ -10,13 +10,15 @@ import { AddPizzaInfoComponent } from './add-pizza-info/add-pizza-info.component
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { FrontPageComponent } from './front-page/front-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddUserDetailsComponent,
     AddPizzaInfoComponent,
-    AddToCartComponent
+    AddToCartComponent,
+    FrontPageComponent
   ],
   imports: [
     BrowserModule,
