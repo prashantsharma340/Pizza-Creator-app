@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"!commonService.showCartDetails\"><p>Make Your Own Pizza </p>\r\n\r\n  <mat-tab-group>\r\n    <mat-tab label=\"Select Size And Base\">\r\n      <div class=\"col-xs-12 \" style=\"margin-top:12%;padding-left: 30px;\">\r\n        <mat-form-field>\r\n          <mat-label>Base (Rs 100)</mat-label>\r\n          <select matNativeControl required [(ngModel)]=\"base\">\r\n            <option value=\"thickCrust\">Thick Crust </option>\r\n            <option value=\"cheeseStuffedCrust\">Cheese-Stuffed Crust </option>\r\n            <option value=\"thinCrust\">Thin Crust</option>\r\n            <option value=\"neapolitanCrust\">Neapolitan Crust</option>\r\n            <option value=\"flatbread\">Flatbread</option>\r\n            <option value=\"cheeseCrust\">Cheese Crust</option>\r\n\r\n          </select>\r\n        </mat-form-field>\r\n      </div>\r\n      <div class=\"col-xs-12 top\">\r\n        <div class=\"col-xs-4 \">\r\n          <mat-card class=\"example-card\" (click)=\"pizzaSelect('small',100)\" [ngClass]=\"{'active':addPizzaSize == 'small'}\">\r\n          <mat-card-header>\r\n            <!-- <div class=\"example-header-image\"></div> -->\r\n            <mat-card-title>Small</mat-card-title>\r\n            <mat-card-subtitle>Serves 1</mat-card-subtitle>\r\n          </mat-card-header>\r\n          <img mat-card-image src=\"../../assets/images/small-pizza.jpg\">\r\n          <mat-card-content>\r\n              <h4>Rs 100</h4>\r\n            </mat-card-content>\r\n        </mat-card>\r\n      </div>\r\n\r\n        <div class=\"col-xs-4\">\r\n          <mat-card class=\"example-card\" (click)=\"pizzaSelect('medium',200)\"  [ngClass]=\"{'active':addPizzaSize == 'medium'}\">\r\n            <mat-card-header>\r\n              <!-- <div class=\"example-header-image\"></div> -->\r\n              <mat-card-title>Medium</mat-card-title>\r\n              <mat-card-subtitle>Serves 2</mat-card-subtitle>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"../../assets/images/medium-pizza.png\">\r\n            <mat-card-content>\r\n                <h4>Rs 200</h4>\r\n              </mat-card-content>\r\n          </mat-card></div>\r\n\r\n        <div class=\"col-xs-4\">\r\n          <mat-card class=\"example-card\" (click)=\"pizzaSelect('large',400)\" [ngClass]=\"{'active':addPizzaSize == 'large'}\">\r\n            <mat-card-header>\r\n              <!-- <div class=\"example-header-image\"></div> -->\r\n              <mat-card-title>Large</mat-card-title>\r\n              <mat-card-subtitle>Serves 3</mat-card-subtitle>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"../../assets/images/large-pizza.png\">\r\n            <mat-card-content>\r\n                <h4>Rs 400</h4>\r\n              </mat-card-content>\r\n          </mat-card>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Choose Toppings\">\r\n      <div class=\"col-xs-12 topping\" >Rs60 for each topping</div>\r\n      <div class=\"col-xs-12 top\">\r\n       <ul style=\"list-style-type:none;\">\r\n        <li class=\"col-xs-3 listt\" style=\"cursor:pointer\" *ngFor=\"let abc of toppings\" (click)=\"selectToppings(abc)\" [ngClass]=\"{'active':abc.selected}\">\r\n          {{abc.name}}\r\n        </li>\r\n\r\n      </ul>\r\n\r\n      </div>\r\n      <div class=\"col-xs-12 butt\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"onClick()\" type=\"submit\">Save</button>\r\n      </div>\r\n      <div *ngIf=\"showError\" class=\"butt showerror\">\r\n          Please provide all the information\r\n      </div>\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n  </div>\r\n\r\n  <div *ngIf=\"commonService.showCartDetails\">\r\n    <app-add-to-cart></app-add-to-cart>\r\n  </div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div *ngIf=\"!commonService.showCartDetails\"><p>Make Your Own Pizza </p>\r\n\r\n  <mat-tab-group>\r\n    <mat-tab label=\"Select Size And Base\">\r\n      <div class=\"col-xs-12 \" style=\"margin-top:12%;padding-left: 30px;\">\r\n        <mat-form-field>\r\n          <mat-label>Base (Rs 100)</mat-label>\r\n          <select matNativeControl required [(ngModel)]=\"base\">\r\n            <option value=\"thickCrust\">Thick Crust </option>\r\n            <option value=\"cheeseStuffedCrust\">Cheese-Stuffed Crust </option>\r\n            <option value=\"thinCrust\">Thin Crust</option>\r\n            <option value=\"neapolitanCrust\">Neapolitan Crust</option>\r\n            <option value=\"flatbread\">Flatbread</option>\r\n            <option value=\"cheeseCrust\">Cheese Crust</option>\r\n\r\n          </select>\r\n        </mat-form-field>\r\n      </div>\r\n      <div class=\"col-xs-12 top\">\r\n        <div class=\"col-xs-4 \">\r\n          <mat-card class=\"example-card\" (click)=\"pizzaSelect('small',100)\" [ngClass]=\"{'active':addPizzaSize == 'small'}\">\r\n          <mat-card-header>\r\n\r\n            <mat-card-title>Small</mat-card-title>\r\n            <mat-card-subtitle>Serves 1</mat-card-subtitle>\r\n          </mat-card-header>\r\n          <img mat-card-image src=\"../../assets/images/small-pizza.jpg\">\r\n          <mat-card-content>\r\n              <h4>Rs 100</h4>\r\n            </mat-card-content>\r\n        </mat-card>\r\n      </div>\r\n\r\n        <div class=\"col-xs-4\">\r\n          <mat-card class=\"example-card\" (click)=\"pizzaSelect('medium',200)\"  [ngClass]=\"{'active':addPizzaSize == 'medium'}\">\r\n            <mat-card-header>\r\n              <mat-card-title>Medium</mat-card-title>\r\n              <mat-card-subtitle>Serves 2</mat-card-subtitle>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"../../assets/images/medium-pizza.png\">\r\n            <mat-card-content>\r\n                <h4>Rs 200</h4>\r\n              </mat-card-content>\r\n          </mat-card></div>\r\n\r\n        <div class=\"col-xs-4\">\r\n          <mat-card class=\"example-card\" (click)=\"pizzaSelect('large',400)\" [ngClass]=\"{'active':addPizzaSize == 'large'}\">\r\n            <mat-card-header>\r\n              <mat-card-title>Large</mat-card-title>\r\n              <mat-card-subtitle>Serves 3</mat-card-subtitle>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"../../assets/images/large-pizza.png\">\r\n            <mat-card-content>\r\n                <h4>Rs 400</h4>\r\n              </mat-card-content>\r\n          </mat-card>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Choose Toppings\">\r\n      <div class=\"col-xs-12 topping\" >Rs60 for each topping</div>\r\n      <div class=\"col-xs-12 top\">\r\n       <ul style=\"list-style-type:none;\">\r\n        <li class=\"col-xs-3 listt\" style=\"cursor:pointer\" *ngFor=\"let abc of toppings\" (click)=\"selectToppings(abc)\" [ngClass]=\"{'active':abc.selected}\">\r\n          {{abc.name}}\r\n        </li>\r\n\r\n      </ul>\r\n\r\n      </div>\r\n      <div class=\"col-xs-12 butt\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"onClick()\" type=\"submit\">Save</button>\r\n      </div>\r\n      <div *ngIf=\"showError\" class=\"butt showerror\">\r\n          Please provide all the information\r\n      </div>\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n  </div>\r\n\r\n  <div *ngIf=\"commonService.showCartDetails\">\r\n    <app-add-to-cart></app-add-to-cart>\r\n  </div> -->\r\n\r\n\r\n  <div   *ngIf=\"!commonService.showCartDetails\"><p>Make Your Own Pizza </p>\r\n\r\n    <mat-tab-group >\r\n      <mat-tab label=\"Select Your Pizza\">\r\n        <div class=\"col-xs-12 \"  style=\"margin-top:12%;padding-left: 30px;\">\r\n          <mat-form-field>\r\n            <mat-label>Base (Rs 100)</mat-label>\r\n            <select matNativeControl required [(ngModel)]=\"base\">\r\n              <option value=\"thickCrust\">Thick Crust </option>\r\n              <option value=\"cheeseStuffedCrust\">Cheese-Stuffed Crust </option>\r\n              <option value=\"thinCrust\">Thin Crust</option>\r\n              <option value=\"neapolitanCrust\">Neapolitan Crust</option>\r\n              <option value=\"flatbread\">Flatbread</option>\r\n              <option value=\"cheeseCrust\">Cheese Crust</option>\r\n\r\n            </select>\r\n          </mat-form-field>\r\n        </div>\r\n        <div class=\"col-xs-12 top\">\r\n          <div class=\"col-xs-4 \">\r\n            <mat-card class=\"example-card\" (click)=\"pizzaSelect('small',100)\" [ngClass]=\"{'active':addPizzaSize == 'small'}\">\r\n            <mat-card-header>\r\n              <!-- <div class=\"example-header-image\"></div> -->\r\n              <mat-card-title>Small</mat-card-title>\r\n              <mat-card-subtitle>Serves 1</mat-card-subtitle>\r\n            </mat-card-header>\r\n            <img mat-card-image src=\"../../assets/images/small-pizza.jpg\">\r\n            <mat-card-content>\r\n                <h4>Rs 100</h4>\r\n              </mat-card-content>\r\n          </mat-card>\r\n        </div>\r\n\r\n          <div class=\"col-xs-4\">\r\n            <mat-card class=\"example-card\" (click)=\"pizzaSelect('medium',200)\"  [ngClass]=\"{'active':addPizzaSize == 'medium'}\">\r\n              <mat-card-header>\r\n                <!-- <div class=\"example-header-image\"></div> -->\r\n                <mat-card-title>Medium</mat-card-title>\r\n                <mat-card-subtitle>Serves 2</mat-card-subtitle>\r\n              </mat-card-header>\r\n              <img mat-card-image src=\"../../assets/images/medium-pizza.png\">\r\n              <mat-card-content>\r\n                  <h4>Rs 200</h4>\r\n                </mat-card-content>\r\n            </mat-card></div>\r\n\r\n          <div class=\"col-xs-4\">\r\n            <mat-card class=\"example-card\" (click)=\"pizzaSelect('large',400)\" [ngClass]=\"{'active':addPizzaSize == 'large'}\">\r\n              <mat-card-header>\r\n                <!-- <div class=\"example-header-image\"></div> -->\r\n                <mat-card-title>Large</mat-card-title>\r\n                <mat-card-subtitle>Serves 3</mat-card-subtitle>\r\n              </mat-card-header>\r\n              <img mat-card-image src=\"../../assets/images/large-pizza.png\">\r\n              <mat-card-content>\r\n                  <h4>Rs 400</h4>\r\n                </mat-card-content>\r\n            </mat-card>\r\n          </div>\r\n        </div>\r\n      </mat-tab>\r\n\r\n      <mat-tab id=\"main\" label=\"Choose Toppings\">\r\n        <div  class=\"col-xs-12 topping\" >Rs60 for each topping</div>\r\n        <div   class=\"col-xs-12 top\">\r\n         <ul style=\"list-style-type:none;\">\r\n          <li class=\"col-xs-2 listt\" style=\"cursor:pointer\" *ngFor=\"let abc of toppings\" (click)=\"selectToppings(abc)\" [ngClass]=\"{'active':abc.selected}\">\r\n            <img id=\"ing\" mat-card-image src=\"../../assets/images/{{abc.name}}.svg\">\r\n            <br>\r\n            {{abc.name}}\r\n\r\n          </li>\r\n\r\n        </ul>\r\n\r\n\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 butt \">\r\n          <img  id=\"base1\"src=\"../../assets/images/base.svg\">\r\n        <br>\r\n        <br>\r\n        </div>\r\n\r\n\r\n\r\n\r\n        <div class=\"col-xs-12 \">\r\n\r\n\r\n          <button mat-raised-button color=\"accent\" (click)=\"onClick()\" type=\"submit\" class=\"ba\">Save</button>\r\n        </div>\r\n        <div class=\"row-xs-3 col-xs-2\" id=\"topp\"></div>\r\n        <div *ngIf=\"showError\" class=\" col-xs-6 showerror\">\r\n            Please provide all the information\r\n        </div>\r\n      </mat-tab>\r\n    </mat-tab-group>\r\n    </div>\r\n\r\n    <div *ngIf=\"commonService.showCartDetails\">\r\n      <app-add-to-cart></app-add-to-cart>\r\n    </div>\r\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"col-xs-12 a padd\">\r\n  <div class=\"col-xs-6 b padd\">\r\n    <img class=\"img1\" src=\"../assets/images/pizza.jpg\" />\r\n  </div>\r\n  <div class=\"col-xs-6\" *ngIf=\"commonService.showuserDetails\">\r\n    <app-add-user-details></app-add-user-details>\r\n  </div>\r\n  <div class=\"col-xs-6\" *ngIf=\"!commonService.showuserDetails\">\r\n  <app-front-page ></app-front-page>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<!--\r\n<div class=\"col-xs-12 a padd\">\r\n  <div class=\"col-xs-6 b padd\">\r\n    <img class=\"img1\" src=\"../assets/images/pizza.jpg\" />\r\n  </div>\r\n  <div class=\"col-xs-6\">\r\n    <mat-tab-group>\r\n      <mat-tab label=\"First\">\r\n        <app-add-user-details></app-add-user-details>\r\n      </mat-tab>\r\n      <mat-tab label=\"Second\"\r\n        ><app-add-pizza-info></app-add-pizza-info\r\n      ></mat-tab>\r\n      <mat-tab label=\"Third\"> Content 3 </mat-tab>\r\n    </mat-tab-group>\r\n  </div>\r\n</div> -->\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"col-xs-12  padd\">\r\n  <div class=\"col-xs-6  padd\">\r\n    <img class=\"img1\" src=\"../assets/images/pizza.jpg\" />\r\n  </div>\r\n  <div class=\"col-xs-6  padd\" *ngIf=\"commonService.showuserDetails\">\r\n    <app-add-user-details></app-add-user-details>\r\n  </div>\r\n  <div class=\"col-xs-6\" *ngIf=\"!commonService.showuserDetails\">\r\n  <app-front-page ></app-front-page>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<!--\r\n<div class=\"col-xs-12 a padd\">\r\n  <div class=\"col-xs-6 b padd\">\r\n    <img class=\"img1\" src=\"../assets/images/pizza.jpg\" />\r\n  </div>\r\n  <div class=\"col-xs-6\">\r\n    <mat-tab-group>\r\n      <mat-tab label=\"First\">\r\n        <app-add-user-details></app-add-user-details>\r\n      </mat-tab>\r\n      <mat-tab label=\"Second\"\r\n        ><app-add-pizza-info></app-add-pizza-info\r\n      ></mat-tab>\r\n      <mat-tab label=\"Third\"> Content 3 </mat-tab>\r\n    </mat-tab-group>\r\n  </div>\r\n</div> -->\r\n");
 
 /***/ }),
 
@@ -345,7 +345,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("p{\r\n  font-family: fantasy;\r\n  font-size: 50px;\r\n  letter-spacing: 1px;\r\n  letter-spacing: 4px;\r\n  word-spacing: 10px;\r\n  text-align: center;\r\n  margin-top: 30px;\r\n  }\r\n\r\n:host ::ng-deep .mat-tab-labels{\r\n  margin-top: 25px;\r\n}\r\n\r\n.top{\r\n  margin-top: 40px;\r\n}\r\n\r\nli{\r\n    font-size: 15px;\r\n}\r\n\r\n.topping{\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 20px;\r\n    text-align: center;\r\n}\r\n\r\n.example-card {\r\n  max-width: 200px;\r\n  text-align:center;\r\n}\r\n\r\nimg{\r\n  width: 130px;\r\n}\r\n\r\n.active{\r\n\r\nbackground-color:#d2b99e\r\n}\r\n\r\n.mat-form-field{\r\n  width:70%;\r\n}\r\n\r\n.butt{\r\n  text-align: center;\r\n    padding-right: 125px;\r\n}\r\n\r\n.listt{\r\npadding:5px;\r\nmargin-top:5px;\r\nmargin-bottom: 5px;\r\nmargin-right:20px;\r\n}\r\n\r\nmat-card-header{\r\n  margin-left:40px;\r\n}\r\n\r\n.showerror{\r\n  color:red;\r\n  margin-top: 50px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRkLXBpenphLWluZm8vYWRkLXBpenphLWluZm8uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG9CQUFvQjtFQUNwQixlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQjs7QUFFRjtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBOztBQUVBO0FBQ0E7O0FBQ0E7RUFDRSxTQUFTO0FBQ1g7O0FBRUE7RUFDRSxrQkFBa0I7SUFDaEIsb0JBQW9CO0FBQ3hCOztBQUVBO0FBQ0EsV0FBVztBQUNYLGNBQWM7QUFDZCxrQkFBa0I7QUFDbEIsaUJBQWlCO0FBQ2pCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsU0FBUztFQUNULGdCQUFnQjtBQUNsQiIsImZpbGUiOiJzcmMvYXBwL2FkZC1waXp6YS1pbmZvL2FkZC1waXp6YS1pbmZvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJwe1xyXG4gIGZvbnQtZmFtaWx5OiBmYW50YXN5O1xyXG4gIGZvbnQtc2l6ZTogNTBweDtcclxuICBsZXR0ZXItc3BhY2luZzogMXB4O1xyXG4gIGxldHRlci1zcGFjaW5nOiA0cHg7XHJcbiAgd29yZC1zcGFjaW5nOiAxMHB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIH1cclxuXHJcbjpob3N0IDo6bmctZGVlcCAubWF0LXRhYi1sYWJlbHN7XHJcbiAgbWFyZ2luLXRvcDogMjVweDtcclxufVxyXG5cclxuLnRvcHtcclxuICBtYXJnaW4tdG9wOiA0MHB4O1xyXG59XHJcblxyXG5saXtcclxuICAgIGZvbnQtc2l6ZTogMTVweDtcclxufVxyXG5cclxuLnRvcHBpbmd7XHJcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5leGFtcGxlLWNhcmQge1xyXG4gIG1heC13aWR0aDogMjAwcHg7XHJcbiAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbn1cclxuXHJcbmltZ3tcclxuICB3aWR0aDogMTMwcHg7XHJcbn1cclxuXHJcbi5hY3RpdmV7XHJcblxyXG5iYWNrZ3JvdW5kLWNvbG9yOiNkMmI5OWVcclxufVxyXG4ubWF0LWZvcm0tZmllbGR7XHJcbiAgd2lkdGg6NzAlO1xyXG59XHJcblxyXG4uYnV0dHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMjVweDtcclxufVxyXG5cclxuLmxpc3R0e1xyXG5wYWRkaW5nOjVweDtcclxubWFyZ2luLXRvcDo1cHg7XHJcbm1hcmdpbi1ib3R0b206IDVweDtcclxubWFyZ2luLXJpZ2h0OjIwcHg7XHJcbn1cclxuXHJcbm1hdC1jYXJkLWhlYWRlcntcclxuICBtYXJnaW4tbGVmdDo0MHB4O1xyXG59XHJcblxyXG4uc2hvd2Vycm9ye1xyXG4gIGNvbG9yOnJlZDtcclxuICBtYXJnaW4tdG9wOiA1MHB4O1xyXG59XHJcbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("/* p{\r\n  font-family: fantasy;\r\n  font-size: 50px;\r\n  letter-spacing: 1px;\r\n  letter-spacing: 4px;\r\n  word-spacing: 10px;\r\n  text-align: center;\r\n  margin-top: 30px;\r\n  }\r\n\r\n:host ::ng-deep .mat-tab-labels{\r\n  margin-top: 25px;\r\n}\r\n\r\n.top{\r\n  margin-top: 40px;\r\n}\r\n\r\nli{\r\n    font-size: 15px;\r\n}\r\n\r\n.topping{\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 20px;\r\n    text-align: center;\r\n}\r\n\r\n.example-card {\r\n  max-width: 200px;\r\n  text-align:center;\r\n}\r\n\r\nimg{\r\n  width: 130px;\r\n}\r\n\r\n.active{\r\n\r\nbackground-color:#d2b99e\r\n}\r\n.mat-form-field{\r\n  width:70%;\r\n}\r\n\r\n.butt{\r\n  text-align: center;\r\n    padding-right: 125px;\r\n}\r\n\r\n.listt{\r\npadding:5px;\r\nmargin-top:5px;\r\nmargin-bottom: 5px;\r\nmargin-right:20px;\r\n}\r\n\r\nmat-card-header{\r\n  margin-left:40px;\r\n}\r\n\r\n.showerror{\r\n  color:red;\r\n  margin-top: 50px;\r\n} */\r\n\r\n\r\np{\r\n  font-family: fantasy;\r\n  font-size: 50px;\r\n  letter-spacing: 1px;\r\n  letter-spacing: 4px;\r\n  word-spacing: 10px;\r\n  text-align: center;\r\n  margin-top: 30px;\r\n  }\r\n\r\n\r\n:host ::ng-deep .mat-tab-labels{\r\n  margin-top: 25px;\r\n}\r\n\r\n\r\n.topping_base1{\r\n  height:25px !important ;\r\n  width:25px !important;\r\n  z-index: 2;\r\n\r\n\r\n}\r\n\r\n\r\n#topp{\r\n  margin-left: 220px;\r\n  margin-top: -160px;\r\n\r\n}\r\n\r\n\r\n.top{\r\n  margin-top: 40px;\r\n}\r\n\r\n\r\nli{\r\n    font-size: 15px;\r\n}\r\n\r\n\r\n.topping{\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    font-size: 20px;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.example-card {\r\n  max-width: 200px;\r\n  text-align:center;\r\n}\r\n\r\n\r\nimg{\r\n  width: 130px;\r\n}\r\n\r\n\r\n.active{\r\n\r\nbackground-color:#d2b99e\r\n}\r\n\r\n\r\n.mat-form-field{\r\n  width:70%;\r\n}\r\n\r\n\r\n#base1{\r\n  z-index: -1;\r\n    position: absolute;\r\n    left: 180px;\r\n    top: 50px;\r\n    width: 170px;\r\n}\r\n\r\n\r\n.butt{\r\n  text-align: center ;\r\n     padding-right: 125px ;\r\n\r\n}\r\n\r\n\r\n#main{\r\n\r\n  height:800px;\r\n}\r\n\r\n\r\n.ba{\r\n\r\n  margin-left: 220px;\r\n    margin-top: 140px;\r\n}\r\n\r\n\r\n.listt{\r\npadding:5px;\r\nmargin-top:5px;\r\n\r\nmargin-bottom: 10px;\r\nmargin-right:10px;\r\n}\r\n\r\n\r\nmat-card-header{\r\n  margin-left:40px;\r\n}\r\n\r\n\r\n.showerror{\r\n  color:red;\r\n  margin-top: 10px;\r\n    margin-left: 165px;\r\n}\r\n\r\n\r\n#ing{\r\n  margin-left: 5px;\r\n  margin-top: 10px;\r\n  height:40px;\r\n  width:40px;\r\n\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRkLXBpenphLWluZm8vYWRkLXBpenphLWluZm8uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0FpRUc7OztBQUdIO0VBQ0Usb0JBQW9CO0VBQ3BCLGVBQWU7RUFDZixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCOzs7QUFFRjtFQUNFLGdCQUFnQjtBQUNsQjs7O0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLFVBQVU7OztBQUdaOzs7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixrQkFBa0I7O0FBRXBCOzs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7O0FBRUE7SUFDSSxlQUFlO0FBQ25COzs7QUFHQTtJQUNJLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0Qjs7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0FBQ25COzs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7O0FBRUE7O0FBRUE7QUFDQTs7O0FBQ0E7RUFDRSxTQUFTO0FBQ1g7OztBQUVBO0VBQ0UsV0FBVztJQUNULGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsU0FBUztJQUNULFlBQVk7QUFDaEI7OztBQUdBO0VBQ0UsbUJBQW1CO0tBQ2hCLHFCQUFxQjs7QUFFMUI7OztBQUVBOztFQUVFLFlBQVk7QUFDZDs7O0FBQ0E7O0VBRUUsa0JBQWtCO0lBQ2hCLGlCQUFpQjtBQUNyQjs7O0FBQ0E7QUFDQSxXQUFXO0FBQ1gsY0FBYzs7QUFFZCxtQkFBbUI7QUFDbkIsaUJBQWlCO0FBQ2pCOzs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7O0FBRUE7RUFDRSxTQUFTO0VBQ1QsZ0JBQWdCO0lBQ2Qsa0JBQWtCO0FBQ3RCOzs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsV0FBVztFQUNYLFVBQVU7O0FBRVoiLCJmaWxlIjoic3JjL2FwcC9hZGQtcGl6emEtaW5mby9hZGQtcGl6emEtaW5mby5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogcHtcclxuICBmb250LWZhbWlseTogZmFudGFzeTtcclxuICBmb250LXNpemU6IDUwcHg7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDFweDtcclxuICBsZXR0ZXItc3BhY2luZzogNHB4O1xyXG4gIHdvcmQtc3BhY2luZzogMTBweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLXRvcDogMzBweDtcclxuICB9XHJcblxyXG46aG9zdCA6Om5nLWRlZXAgLm1hdC10YWItbGFiZWxze1xyXG4gIG1hcmdpbi10b3A6IDI1cHg7XHJcbn1cclxuXHJcbi50b3B7XHJcbiAgbWFyZ2luLXRvcDogNDBweDtcclxufVxyXG5cclxubGl7XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbn1cclxuXHJcbi50b3BwaW5ne1xyXG4gICAgbWFyZ2luLXRvcDogMzBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4uZXhhbXBsZS1jYXJkIHtcclxuICBtYXgtd2lkdGg6IDIwMHB4O1xyXG4gIHRleHQtYWxpZ246Y2VudGVyO1xyXG59XHJcblxyXG5pbWd7XHJcbiAgd2lkdGg6IDEzMHB4O1xyXG59XHJcblxyXG4uYWN0aXZle1xyXG5cclxuYmFja2dyb3VuZC1jb2xvcjojZDJiOTllXHJcbn1cclxuLm1hdC1mb3JtLWZpZWxke1xyXG4gIHdpZHRoOjcwJTtcclxufVxyXG5cclxuLmJ1dHR7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgcGFkZGluZy1yaWdodDogMTI1cHg7XHJcbn1cclxuXHJcbi5saXN0dHtcclxucGFkZGluZzo1cHg7XHJcbm1hcmdpbi10b3A6NXB4O1xyXG5tYXJnaW4tYm90dG9tOiA1cHg7XHJcbm1hcmdpbi1yaWdodDoyMHB4O1xyXG59XHJcblxyXG5tYXQtY2FyZC1oZWFkZXJ7XHJcbiAgbWFyZ2luLWxlZnQ6NDBweDtcclxufVxyXG5cclxuLnNob3dlcnJvcntcclxuICBjb2xvcjpyZWQ7XHJcbiAgbWFyZ2luLXRvcDogNTBweDtcclxufSAqL1xyXG5cclxuXHJcbnB7XHJcbiAgZm9udC1mYW1pbHk6IGZhbnRhc3k7XHJcbiAgZm9udC1zaXplOiA1MHB4O1xyXG4gIGxldHRlci1zcGFjaW5nOiAxcHg7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDRweDtcclxuICB3b3JkLXNwYWNpbmc6IDEwcHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbi10b3A6IDMwcHg7XHJcbiAgfVxyXG5cclxuOmhvc3QgOjpuZy1kZWVwIC5tYXQtdGFiLWxhYmVsc3tcclxuICBtYXJnaW4tdG9wOiAyNXB4O1xyXG59XHJcbi50b3BwaW5nX2Jhc2Uxe1xyXG4gIGhlaWdodDoyNXB4ICFpbXBvcnRhbnQgO1xyXG4gIHdpZHRoOjI1cHggIWltcG9ydGFudDtcclxuICB6LWluZGV4OiAyO1xyXG5cclxuXHJcbn1cclxuI3RvcHB7XHJcbiAgbWFyZ2luLWxlZnQ6IDIyMHB4O1xyXG4gIG1hcmdpbi10b3A6IC0xNjBweDtcclxuXHJcbn1cclxuXHJcbi50b3B7XHJcbiAgbWFyZ2luLXRvcDogNDBweDtcclxufVxyXG5cclxubGl7XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbn1cclxuXHJcblxyXG4udG9wcGluZ3tcclxuICAgIG1hcmdpbi10b3A6IDMwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLmV4YW1wbGUtY2FyZCB7XHJcbiAgbWF4LXdpZHRoOiAyMDBweDtcclxuICB0ZXh0LWFsaWduOmNlbnRlcjtcclxufVxyXG5cclxuaW1ne1xyXG4gIHdpZHRoOiAxMzBweDtcclxufVxyXG5cclxuLmFjdGl2ZXtcclxuXHJcbmJhY2tncm91bmQtY29sb3I6I2QyYjk5ZVxyXG59XHJcbi5tYXQtZm9ybS1maWVsZHtcclxuICB3aWR0aDo3MCU7XHJcbn1cclxuXHJcbiNiYXNlMXtcclxuICB6LWluZGV4OiAtMTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDE4MHB4O1xyXG4gICAgdG9wOiA1MHB4O1xyXG4gICAgd2lkdGg6IDE3MHB4O1xyXG59XHJcblxyXG5cclxuLmJ1dHR7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyIDtcclxuICAgICBwYWRkaW5nLXJpZ2h0OiAxMjVweCA7XHJcblxyXG59XHJcblxyXG4jbWFpbntcclxuXHJcbiAgaGVpZ2h0OjgwMHB4O1xyXG59XHJcbi5iYXtcclxuXHJcbiAgbWFyZ2luLWxlZnQ6IDIyMHB4O1xyXG4gICAgbWFyZ2luLXRvcDogMTQwcHg7XHJcbn1cclxuLmxpc3R0e1xyXG5wYWRkaW5nOjVweDtcclxubWFyZ2luLXRvcDo1cHg7XHJcblxyXG5tYXJnaW4tYm90dG9tOiAxMHB4O1xyXG5tYXJnaW4tcmlnaHQ6MTBweDtcclxufVxyXG5cclxubWF0LWNhcmQtaGVhZGVye1xyXG4gIG1hcmdpbi1sZWZ0OjQwcHg7XHJcbn1cclxuXHJcbi5zaG93ZXJyb3J7XHJcbiAgY29sb3I6cmVkO1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgICBtYXJnaW4tbGVmdDogMTY1cHg7XHJcbn1cclxuXHJcbiNpbmd7XHJcbiAgbWFyZ2luLWxlZnQ6IDVweDtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIGhlaWdodDo0MHB4O1xyXG4gIHdpZHRoOjQwcHg7XHJcblxyXG59XHJcbiJdfQ== */");
 
 /***/ }),
 
@@ -362,7 +362,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _assets_services_common_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/services/common.service */ "./src/assets/services/common.service.ts");
+// import { Component, OnInit } from '@angular/core';
+// import { CommonService } from '../../assets/services/common.service'
 
+// @Component({
+//   selector: 'app-add-pizza-info',
+//   templateUrl: './add-pizza-info.component.html',
+//   styleUrls: ['./add-pizza-info.component.css']
+// })
+// export class AddPizzaInfoComponent implements OnInit {
+// // public showCartDetails = true;
+// public addPizzaSize;
+// public base;
+// public selectedToppings = [];
+// public totalPrice;
+// public showError = false;
+// public toppings = [
+//   {name:'pepperoni',selected:false},
+//   {name:'Mushroom',selected:false},
+//   {name:'Onion',selected:false},
+//   {name:'Olives',selected:false},
+//   {name:'Red Peprika',selected:false},
+//   {name:'Paneer tikka',selected:false},
+//   {name:'capsicum',selected:false},
+//   {name:'corn',selected:false},
+//   {name:'sausage',selected:false},
+//   {name:'bacon',selected:false}
+// ]
+//   constructor(private commonService: CommonService) {
+//   }
+//   ngOnInit() {
+//   }
+//   pizzaSelect(id,price){
+//       this.showError=false;
+//       this.addPizzaSize = id;
+//       this.totalPrice = price;
+//   }
+//   selectToppings(item){
+//     this.showError=false;
+//     item.selected = !item.selected;
+//     if (item.selected) {
+//       this.selectedToppings.push(item.name);
+//     }
+//     else {
+//         this.selectedToppings.splice(this.toppings.indexOf(item.name), 1);
+//     }
+//     console.log(this.selectedToppings,'this.toppings')
+//   }
+//   onClick(){
+//     if(!this.base || !this.selectedToppings.length || !this.addPizzaSize)
+//     {
+//       this.showError=true;
+//       return;
+//     }
+//     this.totalPrice = this.totalPrice + 100 + (60 * this.selectedToppings.length);
+//     this.commonService.showCartDetails = true;
+//     this.commonService.pizzaDetails = {
+//                    base:this.base,
+//                    addPizzaSize:this.addPizzaSize,
+//                    selectedToppings:this.selectedToppings,
+//                    price: this.totalPrice
+//     }
+//     console.log(this.commonService.userDetails,'this.commonService.userDetails')
+//     console.log(this.commonService.pizzaDetails,'this.commonService.pizzaDetails')
+//   }
+// }
 
 
 let AddPizzaInfoComponent = class AddPizzaInfoComponent {
@@ -370,17 +434,17 @@ let AddPizzaInfoComponent = class AddPizzaInfoComponent {
         this.commonService = commonService;
         this.selectedToppings = [];
         this.showError = false;
+        this.ar = [1, 2];
         this.toppings = [
-            { name: 'pepperoni', selected: false },
+            { name: 'Pepperoni', selected: false },
             { name: 'Mushroom', selected: false },
             { name: 'Onion', selected: false },
             { name: 'Olives', selected: false },
             { name: 'Red Peprika', selected: false },
-            { name: 'Paneer tikka', selected: false },
-            { name: 'capsicum', selected: false },
-            { name: 'corn', selected: false },
-            { name: 'sausage', selected: false },
-            { name: 'bacon', selected: false }
+            { name: 'Bacon', selected: false },
+            { name: 'Sweet Corn', selected: false },
+            { name: 'Tomato', selected: false },
+            { name: 'Chili', selected: false }
         ];
     }
     ngOnInit() {
@@ -393,10 +457,37 @@ let AddPizzaInfoComponent = class AddPizzaInfoComponent {
     selectToppings(item) {
         this.showError = false;
         item.selected = !item.selected;
+        var x = document.createElement("IMG");
         if (item.selected) {
             this.selectedToppings.push(item.name);
+            //x.setAttribute("id",item.name);
+            x.setAttribute("src", "../../assets/images/" + item.name + ".svg");
+            x.setAttribute("id", item.name);
+            x.setAttribute("width", "20");
+            if (item.name != "Red Peprika") {
+                x.setAttribute("height", "30");
+            }
+            else {
+                x.setAttribute("height", "20");
+            }
+            x.setAttribute("z-index", "2");
+            //  x.setAttribute("class", "tpStyle");
+            // x.setAttribute("top","25px");
+            // x.setAttribute("position","relative");
+            document.getElementById('topp').appendChild(x);
+            // document.getElementById(item.name).setAttribute("class",item.name);
+            // var img =new  Image();
+            // img.id="tp1";
+            // //img.className = "topping_base1";
+            // img.src="../../assets/images/"+item.name+".svg";
+            // //img.className = "topping_base";
+            // document.getElementById('topp').appendChild(img);
+            // document.getElementById('tp1').style.height = "20px";
+            // document.getElementById('tp1').style.width = "20px";
         }
         else {
+            var element = document.getElementById(item.name);
+            element.remove();
             this.selectedToppings.splice(this.toppings.indexOf(item.name), 1);
         }
         console.log(this.selectedToppings, 'this.toppings');

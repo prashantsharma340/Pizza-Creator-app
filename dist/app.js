@@ -4,7 +4,7 @@ const bodyparser = require('body-parser');
 const mongoose = require("mongoose");
 
 const productRoutes = require('./api/routes/products');
-mongoose.connect('mongodb+srv://Prashant:prashant340@cluster0-qliqo.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true,useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://Prashant:prashant340@cluster0-igmbp.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true,useUnifiedTopology: true });
 // '+ process.env.MONGO_ATLAS_PW +'
 
 mongoose.Promise = global.Promise;

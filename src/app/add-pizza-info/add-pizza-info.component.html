@@ -1,4 +1,4 @@
-<div *ngIf="!commonService.showCartDetails"><p>Make Your Own Pizza </p>
+<!-- <div *ngIf="!commonService.showCartDetails"><p>Make Your Own Pizza </p>
 
   <mat-tab-group>
     <mat-tab label="Select Size And Base">
@@ -20,7 +20,7 @@
         <div class="col-xs-4 ">
           <mat-card class="example-card" (click)="pizzaSelect('small',100)" [ngClass]="{'active':addPizzaSize == 'small'}">
           <mat-card-header>
-            <!-- <div class="example-header-image"></div> -->
+
             <mat-card-title>Small</mat-card-title>
             <mat-card-subtitle>Serves 1</mat-card-subtitle>
           </mat-card-header>
@@ -34,7 +34,6 @@
         <div class="col-xs-4">
           <mat-card class="example-card" (click)="pizzaSelect('medium',200)"  [ngClass]="{'active':addPizzaSize == 'medium'}">
             <mat-card-header>
-              <!-- <div class="example-header-image"></div> -->
               <mat-card-title>Medium</mat-card-title>
               <mat-card-subtitle>Serves 2</mat-card-subtitle>
             </mat-card-header>
@@ -47,7 +46,6 @@
         <div class="col-xs-4">
           <mat-card class="example-card" (click)="pizzaSelect('large',400)" [ngClass]="{'active':addPizzaSize == 'large'}">
             <mat-card-header>
-              <!-- <div class="example-header-image"></div> -->
               <mat-card-title>Large</mat-card-title>
               <mat-card-subtitle>Serves 3</mat-card-subtitle>
             </mat-card-header>
@@ -83,4 +81,109 @@
 
   <div *ngIf="commonService.showCartDetails">
     <app-add-to-cart></app-add-to-cart>
-  </div>
+  </div> -->
+
+
+  <div   *ngIf="!commonService.showCartDetails"><p>Make Your Own Pizza </p>
+
+    <mat-tab-group >
+      <mat-tab label="Select Your Pizza">
+        <div class="col-xs-12 "  style="margin-top:12%;padding-left: 30px;">
+          <mat-form-field>
+            <mat-label>Base (Rs 100)</mat-label>
+            <select matNativeControl required [(ngModel)]="base">
+              <option value="thickCrust">Thick Crust </option>
+              <option value="cheeseStuffedCrust">Cheese-Stuffed Crust </option>
+              <option value="thinCrust">Thin Crust</option>
+              <option value="neapolitanCrust">Neapolitan Crust</option>
+              <option value="flatbread">Flatbread</option>
+              <option value="cheeseCrust">Cheese Crust</option>
+
+            </select>
+          </mat-form-field>
+        </div>
+        <div class="col-xs-12 top">
+          <div class="col-xs-4 ">
+            <mat-card class="example-card" (click)="pizzaSelect('small',100)" [ngClass]="{'active':addPizzaSize == 'small'}">
+            <mat-card-header>
+              <!-- <div class="example-header-image"></div> -->
+              <mat-card-title>Small</mat-card-title>
+              <mat-card-subtitle>Serves 1</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/images/small-pizza.jpg">
+            <mat-card-content>
+                <h4>Rs 100</h4>
+              </mat-card-content>
+          </mat-card>
+        </div>
+
+          <div class="col-xs-4">
+            <mat-card class="example-card" (click)="pizzaSelect('medium',200)"  [ngClass]="{'active':addPizzaSize == 'medium'}">
+              <mat-card-header>
+                <!-- <div class="example-header-image"></div> -->
+                <mat-card-title>Medium</mat-card-title>
+                <mat-card-subtitle>Serves 2</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="../../assets/images/medium-pizza.png">
+              <mat-card-content>
+                  <h4>Rs 200</h4>
+                </mat-card-content>
+            </mat-card></div>
+
+          <div class="col-xs-4">
+            <mat-card class="example-card" (click)="pizzaSelect('large',400)" [ngClass]="{'active':addPizzaSize == 'large'}">
+              <mat-card-header>
+                <!-- <div class="example-header-image"></div> -->
+                <mat-card-title>Large</mat-card-title>
+                <mat-card-subtitle>Serves 3</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="../../assets/images/large-pizza.png">
+              <mat-card-content>
+                  <h4>Rs 400</h4>
+                </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab id="main" label="Choose Toppings">
+        <div  class="col-xs-12 topping" >Rs60 for each topping</div>
+        <div   class="col-xs-12 top">
+         <ul style="list-style-type:none;">
+          <li class="col-xs-2 listt" style="cursor:pointer" *ngFor="let abc of toppings" (click)="selectToppings(abc)" [ngClass]="{'active':abc.selected}">
+            <img id="ing" mat-card-image src="../../assets/images/{{abc.name}}.svg">
+            <br>
+            {{abc.name}}
+
+          </li>
+
+        </ul>
+
+
+        </div>
+
+        <div class="col-xs-12 butt ">
+          <img  id="base1"src="../../assets/images/base.svg">
+        <br>
+        <br>
+        </div>
+
+
+
+
+        <div class="col-xs-12 ">
+
+
+          <button mat-raised-button color="accent" (click)="onClick()" type="submit" class="ba">Save</button>
+        </div>
+        <div class="row-xs-3 col-xs-2" id="topp"></div>
+        <div *ngIf="showError" class=" col-xs-6 showerror">
+            Please provide all the information
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+    </div>
+
+    <div *ngIf="commonService.showCartDetails">
+      <app-add-to-cart></app-add-to-cart>
+    </div>

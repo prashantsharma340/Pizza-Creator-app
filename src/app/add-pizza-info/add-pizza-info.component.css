@@ -1,4 +1,4 @@
-p{
+/* p{
   font-family: fantasy;
   font-size: 50px;
   letter-spacing: 1px;
@@ -63,4 +63,114 @@ mat-card-header{
 .showerror{
   color:red;
   margin-top: 50px;
+} */
+
+
+p{
+  font-family: fantasy;
+  font-size: 50px;
+  letter-spacing: 1px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  text-align: center;
+  margin-top: 30px;
+  }
+
+:host ::ng-deep .mat-tab-labels{
+  margin-top: 25px;
+}
+.topping_base1{
+  height:25px !important ;
+  width:25px !important;
+  z-index: 2;
+
+
+}
+#topp{
+  margin-left: 220px;
+  margin-top: -160px;
+
+}
+
+.top{
+  margin-top: 40px;
+}
+
+li{
+    font-size: 15px;
+}
+
+
+.topping{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.example-card {
+  max-width: 200px;
+  text-align:center;
+}
+
+img{
+  width: 130px;
+}
+
+.active{
+
+background-color:#d2b99e
+}
+.mat-form-field{
+  width:70%;
+}
+
+#base1{
+  z-index: -1;
+    position: absolute;
+    left: 180px;
+    top: 50px;
+    width: 170px;
+}
+
+
+.butt{
+  text-align: center ;
+     padding-right: 125px ;
+
+}
+
+#main{
+
+  height:800px;
+}
+.ba{
+
+  margin-left: 220px;
+    margin-top: 140px;
+}
+.listt{
+padding:5px;
+margin-top:5px;
+
+margin-bottom: 10px;
+margin-right:10px;
+}
+
+mat-card-header{
+  margin-left:40px;
+}
+
+.showerror{
+  color:red;
+  margin-top: 10px;
+    margin-left: 165px;
+}
+
+#ing{
+  margin-left: 5px;
+  margin-top: 10px;
+  height:40px;
+  width:40px;
+
 }
